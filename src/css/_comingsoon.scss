@@ -1,0 +1,29 @@
+.comingsoon-container{
+    min-height: 90vh;
+    background-image: radial-gradient(#525252,#131313);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.icon-comingsoon{
+    text-align: center;
+    position: relative;
+    align-items: center;
+    display: inline-block;
+    width: 45em;
+}
+
+.title-soon{
+    position: absolute;
+    /* align-items: center; */
+    top: 1rem;
+    left: 10rem;
+}
+
+.img-cam {
+    position: absolute;
+    top: 0rem;
+    left: -1rem;
+}

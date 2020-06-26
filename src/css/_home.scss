@@ -1,0 +1,104 @@
+// @font-face {
+//     font-family: 'Lobster',sans-serif;
+//     src: url('https://fonts.googleapis.com/css2?family=Lobster&display=swap')
+//   }
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+$fontLobster: "Lobster", sans-serif;
+
+.nav-container {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: rgb(7, 7, 7);
+    min-height: 10vh;
+    display: flex;
+}
+
+nav {
+    width: 80%;
+    margin: auto;
+    // padding: 0rem 0rem;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-items {
+    flex-direction: row;
+    list-style: none;
+    padding: 0 2em;
+}
+
+.cw {
+    color: #fff;
+}
+
+.logo {
+    position: relative;
+    font-family: "Lobster", sans-serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+
+    &::after {
+        content: "";
+        width: 58px;
+        height: 58px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 50%;
+        background-color: #f54538;
+        transform: translate(-9%, -21%);
+        mix-blend-mode: screen;
+    }
+}
+
+.font-mont p {
+    font-family: "Montserrat", sans-serif;
+}
+
+li {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    display: flex;
+
+    &.btn-danger {
+        width: 3em;
+        height: 2em;
+        align-items: center;
+        border-radius: 20px;
+        background-color: #f54538;
+        padding: 0 1em;
+    }
+}
+
+.footer-home {
+    font-family: $fontLobster;
+    color: black;
+    background-color: black;
+    min-height: 10vh;
+    display: flex;
+    h2 {
+        font-size: 2rem;
+    }
+
+    ul {
+        display: flex;
+        width: 35%;
+        justify-content: space-between;
+        li {
+            // padding: 0 2em;
+        }
+    }
+}

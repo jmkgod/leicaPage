@@ -1,0 +1,40 @@
+.showcase {
+    background: radial-gradient(#525252, #131313);
+    display: grid;
+    min-height: 90vh;
+    grid-template-columns: 10% repeat(3, minmax(5rem, 1fr)) 10%;
+    grid-template-rows: 1fr 2fr 1fr;
+
+    h2 {
+        padding: 0;
+        margin: 0;
+        font-size: 5rem;
+        font-weight: lighter;
+        color: white;
+        font-family: "Lobster";
+        grid-column: 2/3;
+        align-self: flex-end;
+    }
+
+    .case-img {
+        grid-row: 2/3;
+        grid-column: 3/4;
+        height: 110%;
+        object-fit: cover;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .info {
+        grid-row: 3/4;
+        grid-column: 4/5;
+    }
+
+    p {
+        font-family: "Montserrat", sans-serif;
+        font-size: 24px;
+        color: #fff;
+
+        
+    }
+}
